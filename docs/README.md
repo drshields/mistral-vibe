@@ -9,3 +9,4 @@ Welcome to the Mistral Vibe documentation! For basic setup, see the [main README
 - **[Proxy Setup](proxy-setup.md)** - Configure proxy and SSL certificate settings for corporate networks or firewalls.
 - **[Programmatic Mode](programmatic-mode.md)** - `vibe --prompt` options, exit codes, and the experimental agent socket and run server.
 - **[Managed Shell Tools](managed-shell-tools.md)** - OS-native shell tools and their Windows configuration.
+- **[Voice on Linux](voice-linux.md)** - Why the portable Linux wheels ship without voice capture, and how to build a voice-enabled wheel for your machine.

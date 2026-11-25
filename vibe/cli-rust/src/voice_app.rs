@@ -133,7 +133,7 @@ pub fn apply_saved(app: &mut App, runtime: &Value, previous_enabled: bool, enabl
     if enabling_audio && !cfg!(feature = "voice") {
         crate::notices::refused(
             app,
-            "Audio setting saved, but audio is unavailable: Voice capture is not available in this build.",
+            "Audio setting saved, but audio is unavailable: Voice capture is not available in this build. Official Linux wheels ship without the `voice` feature; see docs/voice-linux.md in the mistral-vibe repository for a voice-enabled rebuild.",
         );
     }
 }

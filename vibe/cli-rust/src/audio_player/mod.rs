@@ -53,7 +53,7 @@ impl AudioError {
 #[cfg(not(feature = "voice"))]
 pub fn check_available() -> Result<(), AudioError> {
     Err(AudioError::backend(
-        "Audio playback is not available in this build.".to_owned(),
+        "Audio playback is not available in this build. Official Linux wheels ship without the `voice` feature; build a wheel for this machine with the ALSA development headers and MATURIN_PEP517_ARGS='--compatibility linux' (see docs/voice-linux.md in the mistral-vibe repository).".to_owned(),
     ))
 }
 
